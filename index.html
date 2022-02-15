@@ -10,12 +10,14 @@
 
 <body>
 
-    let username = "Маша";
-    let message = `Привет, ${username}!`;
-    <button onСlick="alert(message)">Нажми меня скорей!</button>
+    <button onClick="Hello()">Нажми меня скорей!</button>
 
     <script>
-        alert('message');
+        function Hello() {
+            let username = "Маша";
+            let message = `Привет, ${username}!`;
+            alert(message);
+        }
     </script>
 
 </body>
