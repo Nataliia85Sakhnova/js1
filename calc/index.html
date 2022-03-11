@@ -10,36 +10,18 @@
 
 <body>
 
+
+    <input id="number1" type="number" />
+    <input id="number2" type="number" />
+
     <button onClick="Plus()"> + </button>
     <button onClick="Minus()"> - </button>
     <button onClick="Multi()"> x </button>
     <button onClick="Divide()"> / </button>
 
-    <script>
-        function Plus() {
-            let x = prompt("Первое число?");
-            let y = prompt("Второе число?");
-            alert(Number(x) + Number(y));
-        }
+    <p id="result"></p>
 
-        function Minus() {
-            let x = prompt("Первое число?");
-            let y = prompt("Второе число?");
-            alert(x - y);
-        }
-
-        function Multi() {
-            let x = prompt("Первое число?");
-            let y = prompt("Второе число?");
-            alert(x * y);
-        }
-
-        function Divide() {
-            let x = prompt("Первое число?");
-            let y = prompt("Второе число?");
-            alert(x / y);
-        }
-    </script>
+    <script src="index.js"></script>
 
 </body>
 
