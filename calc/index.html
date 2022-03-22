@@ -5,21 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
 
 
-    <input id="number1" type="number" />
-    <input id="number2" type="number" />
+    <div class="changecolor" onclick="select(this)" id="color">
 
-    <button onClick="Plus()"> + </button>
-    <button onClick="Minus()"> - </button>
-    <button onClick="Multi()"> x </button>
-    <button onClick="Divide()"> / </button>
 
-    <p id="result"></p>
+        <p>Проверка цвета</p>
+
+        <input id="number1" type="number" />
+        <input id="number2" />
+
+        <button onClick="Plus()"> + </button>
+        <button onClick="Minus()"> - </button>
+        <button onClick="Multi()"> x </button>
+        <button onClick="Divide()"> / </button>
+
+        <p id="result"></p>
+
+    </div>
+
+    <div>
+        <input type="color" id="head" name="head" onchange="handlechange(this)" value="#f5f5f5">
+        <label for="head">Head</label>
+    </div>
+
+    <div class="lighttheme" onclick="themeselect(this)" id="theme">
+        Много-много текста...<br>
+        Много-много текста...<br>
+        Много-много текста...<br>
+    </div>
+
 
     <script src="index.js"></script>
 

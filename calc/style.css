@@ -1,0 +1,13 @@
+.selected {
+    background-color: blueviolet;
+}
+
+.lighttheme {
+    background-color: antiquewhite;
+    text-decoration-color: black;
+}
+
+.darktheme {
+    background-color: rgb(5, 5, 5);
+    text-decoration-color: rgb(206, 159, 159);
+}
