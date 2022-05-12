@@ -2,20 +2,20 @@
             let x = document.getElementById("number1").value;
             let y = document.getElementById("number2").value;
          //   alert(Number(x) + Number(y));
-            document.getElementById("result").innerHTML= Number(x) + Number(y)
+            showResult(Number(x) + Number(y))
             console.log(document.getElementById("result").innerHTML)
         }
 
         function Minus() {
             let x = document.getElementById("number1").value;
             let y = document.getElementById("number2").value;
-            document.getElementById("result").innerHTML= Number(x) - Number(y)
+            showResult(Number(x) - Number(y))
         }
 
         function Multi() {
             let x = document.getElementById("number1").value;
             let y = document.getElementById("number2").value;
-            document.getElementById("result").innerHTML= Number(x) * Number(y)
+            showResult(Number(x) * Number(y))
         }
 
         function Divide() {
@@ -32,9 +32,13 @@
                 return
             }
 
-            document.getElementById("result").innerHTML= Number(x) / Number(y)
-
+            showResult(Number(x) / Number(y))
+            console.log(document.getElementById("color").innerText)
+            console.log(document.getElementById("color").innerHTML)
         }
+
+        const showResult = (answer) => {
+            document.getElementById("result").innerHTML= `Ваш результат ${answer}`}
 
         function select(sender) {
             console.log(sender);
@@ -56,6 +60,11 @@
             console.log(elem.value)
             document.getElementById("theme").style.background=elem.value
         }
+
+        plus.addEventListener("click", Plus);
+        minus.addEventListener("click", Minus);
+        multi.addEventListener("click", Multi);
+        divide.addEventListener("click", Divide);
 
 
 
